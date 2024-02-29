@@ -11,12 +11,7 @@ import (
 
 func main() {
 	ctx := context.Background()
-	// This snippet has been automatically generated and should be regarded as a code template only.
-	// It will require modifications to work:
-	// - It may require correct/in-range values for request initialization.
-	// - It may require specifying regional endpoints when creating the service client as shown in:
-	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
-	c, err := translate.NewTranslationClient(ctx, option.WithCredentialsFile("round-mark-397813-9b79a82e9b9d.json"))
+	c, err := translate.NewTranslationClient(ctx, option.WithCredentialsFile("")) //credentials of your json file
 	if err != nil {
     panic(err)
 	}
